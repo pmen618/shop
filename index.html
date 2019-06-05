@@ -1,0 +1,100 @@
+<html>  
+    <head>
+      <title> Real Time Chat </title>
+      <meta name="description" content="Template by Thuong Men">
+      <meta name="keywords" content="HTML, CSS, JavaScript, PHP">
+      <meta name="author" content="Thuong Men">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link rel="shortcut icon" href="img/logo/favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/animate.css" />
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="style.css" />
+      <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        
+      <div class="container-fluid">
+        <!-- Loading -->
+        <div class="doc-loader">
+          <img src="img/loading.gif" alt="Loading">
+        </div>
+
+        <!-- Content -->
+        <div class="row">
+          <div id="background" class="bg">
+            <!--  WELCOME -->
+            <div id="welcome" class="meeppy">
+              <img src="img/welcome2.gif" alt="">
+              <h2 class="fadeIn">Welcome to Meeppy</h2>
+              <p class="text">Chat with your friends, share photo and video file with high quality</p>
+              <button type="submit" class="startbutton  " id="startmeeppy">Start Chat
+            </div>
+            <!-- LOGIN -->
+            <div id="userFormArea" class="row">
+              <div class="col-md-12">
+                <div class="avatar bounce">
+                  <img src="img/avater.jpg" alt="">
+                </div>
+                <form action="" id="userForm" class="">
+                  <div class="form-group">
+                    <label for="">Login</label>
+                    <input type="text" id="username" placeholder="Username">
+                    <input type="submit" value="Login" class="startbutton  ">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- MESSAGE -->
+            <div class="" id="messageArea">
+              <div class="col-md-12">
+                <div class="active" id="person"></div>
+              </div>
+              <div class="col-md-12" id="userlist">
+                <div class="wave2"></div>
+                <div class="userOnline" style="background-color:#182f4a;">
+                  <div id="toggle">
+                     <div class="">ALL</div>
+                  </div>
+                  <ul class="list-group" id="users">
+                      
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="content">
+                  <div class="chattty" id="chat"></div>
+                  <form id="messageFrom">
+                    <div class="form-group">
+                     <!-- <input type="text" name="username" placeholder="username" id="users">
+                     --> 
+                      <input id="message" type="text" placeholder="Message..." name="message" class="message">
+                      <button type="submit" class="startbutton send " value=""><i class="fa fa-paper-plane"></i></button>
+                    </div>
+                  </form>
+                </div>
+                
+             </div>
+            </div><!-- END MESSAGE -->
+            <div class="" id="home"></div>
+           </div><!-- END BG -->
+          </div><!-- END Content -->        
+      </div><!--END CONTAINER FLUID -->
+      
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="client.js"></script>  
+    
+  </body>
+</html>

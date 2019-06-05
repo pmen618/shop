@@ -1,0 +1,10 @@
+label.col-md-3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 0;
+}
+.form-control{
+	height: 50px;
+
+}

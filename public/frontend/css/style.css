@@ -1,0 +1,29 @@
+.product_image{
+  height: 390px;
+}
+.product_image img {
+    height: 100%;
+    width: 100%;
+}
+.title{
+  width: 100%;
+  font-size: 20px;
+  color:red;
+  font-weight: bold;
+}
+.product-related {
+	font-size: 24px;
+    margin: 35px 0 0 0;
+    /* background: #ff9f1a; */
+    color: #4a4a4a;
+    padding: 15px;
+}
+.product-describe {
+    margin: 25px 0;
+}
+.product-description.col-md-12 {
+    background: #f8f8f8;
+    height: 100%;
+    padding: 25px;
+    color: #000;
+}
